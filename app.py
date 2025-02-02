@@ -176,4 +176,4 @@ def get_submissions():
 # Run the Application
 if __name__ == '__main__':
     insert_projects()
-    app.run(debug=True)
+    #app.run(debug=True)
