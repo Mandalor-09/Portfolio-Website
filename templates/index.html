@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Om Singh - Data Scientist</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body class="light-mode">
+    <header>
+        <nav>
+            <div class="logo">OS</div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="mode-toggle">
+                <input type="checkbox" id="dark-mode-toggle">
+                <label for="dark-mode-toggle" class="toggle-label">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                </label>
+            </div>
+            <div class="menu-btn">
+                <div class="menu-btn__burger"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="hero-image">
+                    <img src="static/profile_pic.jpeg" alt="John Doe">
+                </div>
+                <div class="hero-text">
+                    <h1>Om Singh</h1>
+                    <h2>Data Scientist</h2>
+                    <p>Transforming data into actionable insights with AI and Machine Learning</p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" onclick="downloadResume()">Download Resume</button>
+                        <a href="#contact" class="btn btn-secondary">Hire Me</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-background">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills">
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <div class="skill-card" data-skill="Python">
+                    <div class="skill-icon"><i class="fab fa-python"></i></div>
+                    <h3>Python</h3>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="--progress: 75%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-card" data-skill="Excel">
+                    <div class="skill-icon"><i class="fab fa-microsoft"></i></div>
+                    <h3>Excel</h3>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="--progress: 80%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-card" data-skill="Power BI">
+                    <div class="skill-icon"><i class="fas fa-chart-bar"></i></div>
+                    <h3>Power BI</h3>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="--progress: 70%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-card" data-skill="R">
+                    <div class="skill-icon"><i class="fab fa-r-project"></i></div>
+                    <h3>R</h3>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="--progress: 65%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-card" data-skill="Tableau">
+                    <div class="skill-icon"><i class="fab fa-tableau"></i></div>
+                    <h3>Tableau</h3>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="--progress: 80%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-card" data-skill="SQL">
+                    <div class="skill-icon"><i class="fas fa-database"></i></div>
+                    <h3>SQL</h3>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="--progress: 85%"></div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <section id="timeline" class="timeline">
+            <h2>Education & Experience</h2>
+            <div class="timeline-container">
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>BE Artificial Intelligence & Data Science</h3>
+                        <p>Mumbai University</p>
+                        <span class="date">2021 - 2025</span>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Intern</h3>
+                        <p>IBM Skillbuild.</p>
+                        <span class="date">June 2024 - July 2024</span>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Bachelor of Science in Computer Engineering</h3>
+                        <p>MIT</p>
+                        <span class="date">2014 - 2018</span>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Project Intern</h3>
+                        <p>INeuron</p>
+                        <span class="date">April 2024 - June 2024</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2 class="text-center">Projects</h2>
+        
+            <!-- Filter Buttons -->
+            <div class="project-filters text-center my-3">
+                <button class="filter-btn btn btn-outline-primary m-1" onclick="filterProjects('all')">All</button>
+                {% for section in sections %}
+                <button class="filter-btn btn btn-outline-primary m-1" onclick="filterProjects('{{ section }}')">{{ section }}</button>
+                {% endfor %}
+            </div>
+        
+            <div class="container mt-4">
+                <div class="row row-cols-1 row-cols-md-3 g-4" id="project-cards">
+                    {% for project in project_list %}
+                    <div class="col-md-4 d-flex">
+                        <div class="card p-3 project-card w-100">
+                            <h5 class="card-title">{{ project.name }}</h5>
+                            <p class="card-text">{{ project.desc }}</p>
+                            <p><strong>Tech Used:</strong> {{ project.tech_used }}</p>
+                            <p>
+                                <a href="{{ project.github }}" class="btn btn-primary" target="_blank">GitHub</a>
+                                <a href="{{ project.demo }}" class="btn btn-success" target="_blank">Demo</a>
+                            </p>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            
+        </section>
+        
+        <section id="contact" class="contact">
+            <h2>Get in Touch</h2>
+            <form id="contact-form" method="POST">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" required>
+                    <label for="name">Name</label>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" required>
+                    <label for="email">Email</label>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" required></textarea>
+                    <label for="message">Message</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://github.com/Mandalor-09" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/om-singh-ds/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+            <p>&copy; 2025  Om Singh. All rights reserved.</p>
+        </div>
+        <button id="back-to-top" class="btn-floating"><i class="fas fa-arrow-up"></i></button>
+    </footer>
+
+    <script src="static/script.js"></script>
+    <script>
+        function filterProjects(category) {
+            const sectionId = "projects"; // ID of the section to stay on
+            window.location.href = `/?category=${category}#${sectionId}`;
+        }
+    </script>
+</body>
+</html>
+
