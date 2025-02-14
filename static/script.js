@@ -1,22 +1,4 @@
-const portfolioData = {
-    education: [
-      { name: "Ph.D. Data Science", institution: "Stanford University", year: "2022" },
-      { name: "M.S. Computer Science", institution: "MIT", year: "2018" },
-      { name: "B.S. Mathematics", institution: "Harvard University", year: "2016" },
-    ],
-    experience: [
-      { title: "Senior Data Scientist", company: "Google", year: "2022-Present" },
-      { title: "Data Scientist", company: "Amazon", year: "2020-2022" },
-      { title: "Data Science Intern", company: "Facebook", year: "Summer 2019" },
-    ],
-    skills: ["Python", "R", "Machine Learning", "Deep Learning", "SQL", "Data Visualization", "Big Data", "Statistics"],
-    projects: [
-      { name: "Predictive Maintenance System", description: "ML model for equipment failure prediction" },
-      { name: "Customer Churn Analysis", description: "Predictive model for customer retention" },
-      { name: "NLP Sentiment Analysis", description: "Analyzing customer reviews for product improvement" },
-      { name: "Stock Price Forecasting", description: "Deep learning model for stock price prediction" },
-    ],
-  }
+
   
   // Import particlesJS library.  This assumes it's available via a script tag in your HTML or a module import.
   // If using a CDN, ensure the script is included before this JavaScript file.
