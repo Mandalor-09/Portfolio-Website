@@ -12,15 +12,17 @@ app = Flask(__name__)
 def get_db_connection():
     try:
         conn = mysql.connector.connect(
-            host=os.getenv('DB_HOST'),
-            user=os.getenv('DB_USER'),
-            password=os.getenv('DB_PASSWORD'),
-            database=os.getenv('DB_NAME')
+            host=os.getenv('DB_HOST', 'sql12.freesqldatabase.com'),
+            user=os.getenv('DB_USER', 'sql12760785'),
+            password=os.getenv('DB_PASSWORD', 'WhCQGbQZyJ'),
+            database=os.getenv('DB_NAME', 'sql12760785'),
+            port=int(os.getenv('DB_PORT', 3306))
         )
         return conn
     except mysql.connector.Error as err:
         print(f"Database Connection Error: {err}")
         return None
+
 
 # API Route to Retrieve All Projects
 @app.route('/projects', methods=['GET'])
